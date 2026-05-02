@@ -1,0 +1,20 @@
+column,description
+week,Week index (1 = first week of 2022)
+date,Monday date of that week (YYYY-MM-DD)
+city,City name
+country,Country (actual Glovo operating market)
+tier,"City tier: 1=large, 2=mid, 3=emerging/small"
+market_type,competitive (ES/IT/PT) | monopoly (all others)
+is_treated,1 if this is Warsaw (the treated city)
+post_treatment,1 if week >= 78 (treatment period)
+treated_post,1 if treated AND post-treatment (DiD interaction term)
+orders,Weekly order volume
+active_users,Weekly active users
+new_users,New users acquired that week
+aov_eur,Average order value in EUR (PPP-adjusted by market)
+reorder_rate,Share of orders placed by returning users
+conversion_rate,Session-to-order conversion rate
+avg_basket_items,Average number of items per order
+delivery_fee_eur,Avg delivery fee (0 for Warsaw post-week 78 — free-delivery promo)
+weekly_revenue_eur,Platform revenue = orders×AOV + delivery fees
+macro_shock,Shared AR(1) macro shock affecting all cities (common factor)
