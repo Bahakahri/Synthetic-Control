@@ -14,11 +14,11 @@
 
 | Test | Question | Result |
 | --- | --- | --- |
-| Pre-period RMSPE | Is the synthetic control a credible replica of Warsaw? | 3.5% of mean ✅ |
-| RMSPE ratio | Is the post-period gap large vs pre-period noise? | 4.16x ✅ |
-| In-space placebos | Is Warsaw's effect unusual among all cities? | p = 0.05 ✅ |
-| In-time placebos | Is the effect specific to the real treatment date? | Fakes: 1.1–1.6x ✅ |
-| Predictor sensitivity | Does the conclusion hold across predictor sets? | 8.8% variation ✅ |
+| Pre-period RMSPE | Is the synthetic control a credible replica of Warsaw? | 3.5% of mean |
+| RMSPE ratio | Is the post-period gap large vs pre-period noise? | 4.16x |
+| In-space placebos | Is Warsaw's effect unusual among all cities? | p = 0.05 |
+| In-time placebos | Is the effect specific to the real treatment date? | Fakes: 1.1–1.6x |
+| Predictor sensitivity | Does the conclusion hold across predictor sets? | 8.8% variation |
 
 ---
 
