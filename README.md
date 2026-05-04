@@ -24,7 +24,7 @@
 
 ## Visualisations
 
-### Actual vs Synthetic Warsaw — The Hero Plot
+### Actual vs Synthetic Warsaw : The Hero Plot
 
 ![Hero Plot](outputs/phase1_hero_plot.png)
 
@@ -52,7 +52,7 @@ Python · pysyncon · pandas · matplotlib · NumPy
 
 ## Data
 
-Dataset is simulated using insider knowledge of Glovo's real city-level KPIs — order volumes, AOV, and market structure across actual Glovo operating countries (Spain, Italy, Portugal, Poland, Romania, Ukraine, Bulgaria, Serbia, Croatia, Georgia, Armenia, Kazakhstan, Morocco, Kenya, Nigeria, Tunisia, Côte d'Ivoire).
+Dataset is simulated using insider knowledge of Glovo's real city-level KPIs: order volumes, AOV, and market structure across actual Glovo operating countries (Spain, Italy, Portugal, Poland, Romania, Ukraine, Bulgaria, Serbia, Croatia, Georgia, Armenia, Kazakhstan, Morocco, Kenya, Nigeria, Tunisia, Côte d'Ivoire).
 
 The simulation embeds a known true treatment effect (+13% peak → +8% floor, decaying) which the model recovers, validating the implementation.
 
@@ -81,10 +81,10 @@ jupyter notebook notebooks/synthetic_control.ipynb
 
 ## Limitations
 
-- Data is simulated — results validate the methodology, not a specific real-world campaign
+- Data is simulated : results validate the methodology, not a specific real-world campaign
 - With 20 cities, the minimum achievable p-value is 0.05 (1/20). Larger donor pools would allow more precise inference
-- Common trends assumption is validated but not proven — it cannot be directly tested
-- Krakow's elevated placebo ratio (2.78x) is consistent with geographic proximity spillover and high donor weight — it does not invalidate the Warsaw result but is worth monitoring in a real deployment
+- Common trends assumption is validated but not proven : it cannot be directly tested
+- Krakow's elevated placebo ratio (2.78x) is consistent with geographic proximity spillover and high donor weight. it does not invalidate the Warsaw result but is worth monitoring in a real deployment
 
 ---
 
