@@ -1,12 +1,12 @@
-**Step 1 — Data simulation:** Realistic city-level weekly panel data across 20 Glovo operating cities, modelled on actual market structures (monopoly vs competitive), purchasing power parity (€6–24 AOV range), and city-specific growth rates.
+**Step 1: Data simulation:** Realistic city-level weekly panel data across 20 Glovo operating cities, modelled on actual market structures (monopoly vs competitive), purchasing power parity (€6–24 AOV range), and city-specific growth rates.
 
-**Step 2 — Dataprep:** Define treated unit (Warsaw), donor pool (19 cities), predictor variables (`orders`, `aov_eur`, `new_users`, `reorder_rate`), and training window (weeks 1–77).
+**Step 2: Dataprep:** Define treated unit (Warsaw), donor pool (19 cities), predictor variables (`orders`, `aov_eur`, `new_users`, `reorder_rate`), and training window (weeks 1–77).
 
-**Step 3 — Weight optimisation:** Solve constrained quadratic optimisation to find W minimising pre-period RMSPE across predictors.
+**Step 3: Weight optimisation:** Solve constrained quadratic optimisation to find W minimising pre-period RMSPE across predictors.
 
-**Step 4 — Treatment effect:** ATT = mean(actual Warsaw − synthetic Warsaw) over weeks 78–104.
+**Step 4: Treatment effect:** ATT = mean(actual Warsaw, synthetic Warsaw) over weeks 78–104.
 
-**Step 5 — Assumption testing:** RMSPE ratio, in-space placebos (p-value), in-time placebos, predictor sensitivity.
+**Step 5: Assumption testing:** RMSPE ratio, in-space placebos (p-value), in-time placebos, predictor sensitivity.
 
 ---
 
@@ -90,4 +90,4 @@ jupyter notebook notebooks/synthetic_control.ipynb
 
 ## Related Projects
 
-- [Project 1 — Causal Uplift with DMLIV](https://github.com/Bahakahri/causal-uplift-dmliv): Estimating heterogeneous ad effects using Double ML with Instrumental Variables on the Criteo incrementality dataset
+- [Project 1: Causal Uplift with DMLIV](https://github.com/Bahakahri/causal-uplift-dmliv): Estimating heterogeneous ad effects using Double ML with Instrumental Variables on the Criteo incrementality dataset
