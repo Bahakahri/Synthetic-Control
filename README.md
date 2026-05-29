@@ -56,8 +56,6 @@ Dataset is simulated using insider knowledge of Glovo's real city level KPIs: or
 
 The simulation embeds a known true treatment effect (+13% peak => +8% floor, decaying) which the model recovers, validating the implementation.
 
-The raw CSV files are not included in this repository. Run `data/simulate_glovo_panel.py` to regenerate them.
-
 ---
 
 ## Reproducing Results
